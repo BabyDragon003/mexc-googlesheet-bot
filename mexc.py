@@ -1,4 +1,3 @@
-import os
 from dotenv import load_dotenv
 load_dotenv()
 mexc_apikey=os.environ.get('MEXC_APIKEY')
