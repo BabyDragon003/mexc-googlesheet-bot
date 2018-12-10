@@ -1,3 +1,4 @@
+from mexc import *
 import requests
 import gspread
 from google.oauth2.service_account import Credentials

@@ -1,13 +1,8 @@
+import os
 from dotenv import load_dotenv
 load_dotenv()
 mexc_apikey=os.environ.get('MEXC_APIKEY')
 mexc_secretkey=os.environ.get('MEXC_SECRET_KEY')
-# from contract_v1_python_demo import *
-from pymexc import spot, futures
-
-# initialize HTTP client
-futures_client = futures.HTTP(api_key = mexc_apikey, api_secret = mexc_secretkey)
-
 # ******** Open Position *********
 def get_position_data():
     res=futures_client.open_positions()
